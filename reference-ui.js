@@ -9,7 +9,7 @@
     workspace.parentNode.insertBefore(bar,workspace);
     const heading=document.querySelector('.slides-panel .panel-head strong');if(heading)heading.textContent='Folien';
     const add=document.getElementById('addSlideVisualBtn');if(add){const b=add.querySelector('b');if(b)b.textContent='Folie hinzufügen';}
-    document.title='Flora Deck v6.9.29';
+    document.title='Flora Deck v6.9.31';
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',apply);else apply();
 })();

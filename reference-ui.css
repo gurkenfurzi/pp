@@ -19,3 +19,26 @@ html,body,#app{background:var(--flora-bg)!important;font-family:Inter,'Nunito Sa
 button,input,select,textarea{font-family:inherit!important}button{transition:background .12s ease,box-shadow .12s ease}button:hover{box-shadow:0 2px 9px #b36b6b14}
 @media(max-width:1150px){.workspace{grid-template-columns:175px minmax(0,1fr)!important}.editor-row{grid-template-columns:minmax(0,1fr) 250px!important}.topbar .brandcopy>span{display:none!important}}
 @media(max-width:760px){#app{padding:5px!important}.workspace{grid-template-columns:130px minmax(0,1fr)!important}#slidesPanel.slides-panel{width:auto!important;min-width:0!important;position:relative!important;transform:none!important}.editor-row{grid-template-columns:minmax(0,1fr)!important}.inspector.right-dock{position:fixed!important;right:4px!important;top:165px!important;bottom:10px!important;width:min(300px,80vw)!important;z-index:30!important}.topbar{padding:5px!important}}
+/* v6.9.30: correct sizing regressions from reference shell */
+#app{height:100dvh!important;min-height:0!important;display:flex!important;flex-direction:column!important;overflow:hidden!important}
+#flora-global-ribbon{flex:0 0 120px!important;min-height:120px!important;max-height:120px!important;overflow:hidden!important}
+#flora-global-ribbon .toolstrip{height:79px!important;min-height:79px!important;max-height:79px!important;flex:0 0 79px!important;display:flex;align-items:center!important;flex-wrap:nowrap!important;overflow-x:auto!important}
+#flora-global-ribbon .toolstrip.hidden{display:none!important}
+#flora-global-ribbon .tool-group{flex-shrink:0!important;min-height:57px!important;padding:16px 9px 4px!important;display:flex!important;align-items:center!important;gap:5px!important;background:transparent!important;box-shadow:none!important;border:0!important;border-right:1px solid #eee2dd!important;border-radius:0!important}
+#flora-global-ribbon .tool-group button{font-size:12px!important;min-height:32px!important;padding:5px 9px!important}
+.workspace{height:auto!important;flex:1 1 0!important;min-height:0!important;overflow:hidden!important;grid-template-columns:220px minmax(0,1fr)!important}
+.editor{height:100%!important;min-height:0!important;display:flex!important;flex-direction:column!important;overflow:hidden!important}
+.editor-row{flex:1 1 0!important;min-height:0!important;height:auto!important;grid-template-columns:minmax(0,1fr) 290px!important}
+.stage-viewport{display:block!important;overflow:auto!important;min-height:0!important;flex:1 1 0!important;padding:18px!important;contain:none!important}
+.stage-shell{display:block!important;position:relative!important;flex:none!important;overflow:visible!important;min-width:1px;min-height:1px}
+.stage{display:block!important;visibility:visible!important}
+.slides-panel{min-height:0!important;overflow:hidden!important;display:flex!important;flex-direction:column!important}
+.slide-list{flex:1 1 0!important;min-height:0!important;overflow-y:auto!important;order:1!important}
+.slide-add-main{order:2!important;min-height:55px!important;flex:0 0 55px!important;margin-top:8px!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;font-size:13px!important}
+.slide-add-main span{font-size:23px!important}.slide-add-main b{font-size:13px!important}
+.slides-footer{order:3!important;flex:0 0 auto!important}
+.inspector.right-dock{min-height:0!important;overflow-y:auto!important;padding:10px!important}
+.inspector-switch.final-side-tabs{position:sticky!important;top:0!important;z-index:8!important;margin:0 0 14px!important;display:flex!important;gap:4px!important}
+.inspector-switch.final-side-tabs button{font-size:12px!important;white-space:nowrap!important;padding:9px 7px!important}
+.canvas-toolbar{max-width:calc(100% - 24px)!important}
+@media(max-width:1050px){.workspace{grid-template-columns:175px minmax(0,1fr)!important}.editor-row{grid-template-columns:minmax(0,1fr) 240px!important}}
